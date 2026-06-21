@@ -1,5 +1,3 @@
-Below is your **README in clean “edit-ready” format** (you can directly paste into GitHub and tweak names/links later).
-
 # 🏠 Islamabad House Price Prediction System
 
 A machine learning-powered web application that predicts residential property prices in Islamabad, Pakistan using real estate data scraped from Zameen.com.
