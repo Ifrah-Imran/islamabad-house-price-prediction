@@ -1,0 +1,3487 @@
+{
+  "best_model": "Random Forest",
+  "feature_columns": [
+    "area_marla",
+    "bedrooms",
+    "bathrooms",
+    "location_model",
+    "property_type",
+    "area_band",
+    "total_rooms",
+    "parking_spaces",
+    "servant_quarters",
+    "store_rooms",
+    "kitchens",
+    "drawing_rooms"
+  ],
+  "ui_columns": [
+    "area_marla",
+    "bedrooms",
+    "bathrooms",
+    "location",
+    "property_type",
+    "parking_spaces",
+    "servant_quarters",
+    "store_rooms",
+    "kitchens",
+    "drawing_rooms"
+  ],
+  "imputation_defaults": {
+    "property_type": "House",
+    "area_marla": 12.0,
+    "bedrooms": 5.0,
+    "bathrooms": 6.0,
+    "parking_spaces": 3.0,
+    "servant_quarters": 1.0,
+    "store_rooms": 1.0,
+    "kitchens": 2.0,
+    "drawing_rooms": 1.0
+  },
+  "location_profiles": {
+    "B-17, Islamabad": {
+      "count": 3,
+      "tier": "mid",
+      "median_price": 21500000.0,
+      "median_price_per_marla": 4300000.0,
+      "p10_price": 19680000.0,
+      "p90_price": 27100000.0,
+      "median_area_marla": 5.0,
+      "median_bedrooms": 4,
+      "median_bathrooms": 4,
+      "median_parking_spaces": 1.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "5-6": {
+          "count": 3,
+          "median_ppm": 4300000.0,
+          "median_price": 21500000.0
+        }
+      }
+    },
+    "Bahria Enclave - Sector A, Bahria Enclave": {
+      "count": 1,
+      "tier": "premium",
+      "median_price": 62000000.0,
+      "median_price_per_marla": 6200000.0,
+      "p10_price": 62000000.0,
+      "p90_price": 62000000.0,
+      "median_area_marla": 10.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 2.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 1,
+          "median_ppm": 6200000.0,
+          "median_price": 62000000.0
+        }
+      }
+    },
+    "Bahria Enclave - Sector B1, Bahria Enclave": {
+      "count": 1,
+      "tier": "premium",
+      "median_price": 27000000.0,
+      "median_price_per_marla": 5400000.0,
+      "p10_price": 27000000.0,
+      "p90_price": 27000000.0,
+      "median_area_marla": 5.0,
+      "median_bedrooms": 3,
+      "median_bathrooms": 4,
+      "median_parking_spaces": 1.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "5-6": {
+          "count": 1,
+          "median_ppm": 5400000.0,
+          "median_price": 27000000.0
+        }
+      }
+    },
+    "Bahria Enclave - Sector C, Bahria Enclave": {
+      "count": 2,
+      "tier": "premium",
+      "median_price": 117500000.0,
+      "median_price_per_marla": 5875000.0,
+      "p10_price": 112250000.0,
+      "p90_price": 122750000.0,
+      "median_area_marla": 20.0,
+      "median_bedrooms": 6,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 3.5,
+      "median_servant_quarters": 2.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 2,
+          "median_ppm": 5875000.0,
+          "median_price": 117500000.0
+        }
+      }
+    },
+    "Bahria Enclave - Sector C1, Bahria Enclave": {
+      "count": 2,
+      "tier": "premium",
+      "median_price": 56000000.0,
+      "median_price_per_marla": 5600000.0,
+      "p10_price": 55300000.0,
+      "p90_price": 56700000.0,
+      "median_area_marla": 10.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 5,
+      "median_parking_spaces": 2.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.5,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 2,
+          "median_ppm": 5600000.0,
+          "median_price": 56000000.0
+        }
+      }
+    },
+    "Bahria Enclave - Sector C2, Bahria Enclave": {
+      "count": 1,
+      "tier": "premium",
+      "median_price": 57000000.0,
+      "median_price_per_marla": 5700000.0,
+      "p10_price": 57000000.0,
+      "p90_price": 57000000.0,
+      "median_area_marla": 10.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 2.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 1,
+          "median_ppm": 5700000.0,
+          "median_price": 57000000.0
+        }
+      }
+    },
+    "Bahria Enclave - Sector F1, Bahria Enclave": {
+      "count": 1,
+      "tier": "premium",
+      "median_price": 64500000.0,
+      "median_price_per_marla": 6450000.0,
+      "p10_price": 64500000.0,
+      "p90_price": 64500000.0,
+      "median_area_marla": 10.0,
+      "median_bedrooms": 7,
+      "median_bathrooms": 7,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 3.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 1,
+          "median_ppm": 6450000.0,
+          "median_price": 64500000.0
+        }
+      }
+    },
+    "Bahria Enclave - Sector H, Bahria Enclave": {
+      "count": 2,
+      "tier": "premium",
+      "median_price": 24000000.0,
+      "median_price_per_marla": 4800000.0,
+      "p10_price": 24000000.0,
+      "p90_price": 24000000.0,
+      "median_area_marla": 5.0,
+      "median_bedrooms": 3,
+      "median_bathrooms": 3,
+      "median_parking_spaces": 1.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.5,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "5-6": {
+          "count": 2,
+          "median_ppm": 4800000.0,
+          "median_price": 24000000.0
+        }
+      }
+    },
+    "Bahria Enclave - Sector N, Bahria Enclave": {
+      "count": 3,
+      "tier": "premium",
+      "median_price": 27000000.0,
+      "median_price_per_marla": 5400000.0,
+      "p10_price": 27000000.0,
+      "p90_price": 30500000.0,
+      "median_area_marla": 5.0,
+      "median_bedrooms": 3,
+      "median_bathrooms": 4,
+      "median_parking_spaces": 1.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.0,
+      "median_drawing_rooms": 2.0,
+      "bands": {
+        "5-6": {
+          "count": 2,
+          "median_ppm": 5400000.0,
+          "median_price": 27000000.0
+        },
+        "7-9": {
+          "count": 1,
+          "median_ppm": 4571428.571428572,
+          "median_price": 32000000.0
+        }
+      }
+    },
+    "Bahria Enclave, Bahria Town": {
+      "count": 1,
+      "tier": "premium",
+      "median_price": 22000000.0,
+      "median_price_per_marla": 4400000.0,
+      "p10_price": 22000000.0,
+      "p90_price": 22000000.0,
+      "median_area_marla": 5.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 5,
+      "median_parking_spaces": 2.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "5-6": {
+          "count": 1,
+          "median_ppm": 4400000.0,
+          "median_price": 22000000.0
+        }
+      }
+    },
+    "Bani Gala, Islamabad": {
+      "count": 13,
+      "tier": "budget",
+      "median_price": 15300000.0,
+      "median_price_per_marla": 3235294.117647059,
+      "p10_price": 14640000.0,
+      "p90_price": 58999999.999999985,
+      "median_area_marla": 5.0,
+      "median_bedrooms": 3,
+      "median_bathrooms": 4,
+      "median_parking_spaces": 1.5,
+      "median_servant_quarters": 2.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 2,
+          "median_ppm": 4090909.090909091,
+          "median_price": 45000000.0
+        },
+        "14-20": {
+          "count": 2,
+          "median_ppm": 3593750.0,
+          "median_price": 65000000.0
+        },
+        "20+": {
+          "count": 1,
+          "median_ppm": 3235294.117647059,
+          "median_price": 110000000.0
+        },
+        "5-6": {
+          "count": 8,
+          "median_ppm": 2980000.0,
+          "median_price": 14900000.0
+        }
+      }
+    },
+    "CBR Town Phase 1 - Block D, CBR Town Phase 1": {
+      "count": 1,
+      "tier": "budget",
+      "median_price": 34000000.0,
+      "median_price_per_marla": 4857142.857142857,
+      "p10_price": 34000000.0,
+      "p90_price": 34000000.0,
+      "median_area_marla": 7.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 2.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "7-9": {
+          "count": 1,
+          "median_ppm": 4857142.857142857,
+          "median_price": 34000000.0
+        }
+      }
+    },
+    "Canary Residency, Faisal Hills": {
+      "count": 1,
+      "tier": "mid",
+      "median_price": 25000000.0,
+      "median_price_per_marla": 5000000.0,
+      "p10_price": 25000000.0,
+      "p90_price": 25000000.0,
+      "median_area_marla": 5.0,
+      "median_bedrooms": 4,
+      "median_bathrooms": 4,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "5-6": {
+          "count": 1,
+          "median_ppm": 5000000.0,
+          "median_price": 25000000.0
+        }
+      }
+    },
+    "Chatha Bakhtawar, Islamabad": {
+      "count": 2,
+      "tier": "budget",
+      "median_price": 16750000.0,
+      "median_price_per_marla": 3350000.0,
+      "p10_price": 15525000.0,
+      "p90_price": 17975000.0,
+      "median_area_marla": 5.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 4,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "5-6": {
+          "count": 2,
+          "median_ppm": 3350000.0,
+          "median_price": 16750000.0
+        }
+      }
+    },
+    "D-12, Islamabad": {
+      "count": 6,
+      "tier": "ultra",
+      "median_price": 64500000.0,
+      "median_price_per_marla": 11000320.102432778,
+      "p10_price": 51750000.0,
+      "p90_price": 129375000.0,
+      "median_area_marla": 5.0,
+      "median_bedrooms": 4,
+      "median_bathrooms": 5,
+      "median_parking_spaces": 1.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.5,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 1,
+          "median_ppm": 12000000.0,
+          "median_price": 120000000.0
+        },
+        "14-20": {
+          "count": 1,
+          "median_ppm": 11091549.295774648,
+          "median_price": 157500000.0
+        },
+        "5-6": {
+          "count": 4,
+          "median_ppm": 10854545.454545453,
+          "median_price": 53500000.0
+        }
+      }
+    },
+    "D-12/1, D-12": {
+      "count": 2,
+      "tier": "ultra",
+      "median_price": 130000000.0,
+      "median_price_per_marla": 13000000.0,
+      "p10_price": 130000000.0,
+      "p90_price": 130000000.0,
+      "median_area_marla": 10.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 5,
+      "median_parking_spaces": 1.75,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.5,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 2,
+          "median_ppm": 13000000.0,
+          "median_price": 130000000.0
+        }
+      }
+    },
+    "D-12/3, D-12": {
+      "count": 2,
+      "tier": "ultra",
+      "median_price": 197500000.0,
+      "median_price_per_marla": 12750000.0,
+      "p10_price": 167750000.0,
+      "p90_price": 227250000.0,
+      "median_area_marla": 17.0,
+      "median_bedrooms": 7,
+      "median_bathrooms": 2,
+      "median_parking_spaces": 1.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 1,
+          "median_ppm": 15500000.0,
+          "median_price": 155000000.0
+        },
+        "20+": {
+          "count": 1,
+          "median_ppm": 10000000.0,
+          "median_price": 240000000.0
+        }
+      }
+    },
+    "D-12/4, D-12": {
+      "count": 1,
+      "tier": "ultra",
+      "median_price": 65000000.0,
+      "median_price_per_marla": 13000000.0,
+      "p10_price": 65000000.0,
+      "p90_price": 65000000.0,
+      "median_area_marla": 5.0,
+      "median_bedrooms": 4,
+      "median_bathrooms": 4,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "5-6": {
+          "count": 1,
+          "median_ppm": 13000000.0,
+          "median_price": 65000000.0
+        }
+      }
+    },
+    "D-17, Islamabad": {
+      "count": 2,
+      "tier": "budget",
+      "median_price": 25750000.0,
+      "median_price_per_marla": 3350000.0,
+      "p10_price": 18575000.0,
+      "p90_price": 32925000.0,
+      "median_area_marla": 7.5,
+      "median_bedrooms": 4,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.5,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 1,
+          "median_ppm": 3600000.0,
+          "median_price": 36000000.0
+        },
+        "5-6": {
+          "count": 1,
+          "median_ppm": 3100000.0,
+          "median_price": 15500000.0
+        }
+      }
+    },
+    "DHA Defence Phase 1, DHA Defence": {
+      "count": 4,
+      "tier": "premium",
+      "median_price": 98500000.0,
+      "median_price_per_marla": 5258333.333333334,
+      "p10_price": 78500000.0,
+      "p90_price": 166899999.99999997,
+      "median_area_marla": 20.0,
+      "median_bedrooms": 6,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 2.0,
+      "median_store_rooms": 1.5,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 1,
+          "median_ppm": 5416666.666666667,
+          "median_price": 65000000.0
+        },
+        "14-20": {
+          "count": 2,
+          "median_ppm": 4925000.0,
+          "median_price": 98500000.0
+        },
+        "20+": {
+          "count": 1,
+          "median_ppm": 5500000.0,
+          "median_price": 220000000.0
+        }
+      }
+    },
+    "DHA Defence Phase 2, DHA Defence": {
+      "count": 28,
+      "tier": "premium",
+      "median_price": 126250000.0,
+      "median_price_per_marla": 6387500.0,
+      "p10_price": 86075000.0,
+      "p90_price": 145000000.0,
+      "median_area_marla": 20.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 2.0,
+      "median_store_rooms": 2.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 2,
+          "median_ppm": 6725000.0,
+          "median_price": 67250000.0
+        },
+        "14-20": {
+          "count": 22,
+          "median_ppm": 6387500.0,
+          "median_price": 127750000.0
+        },
+        "20+": {
+          "count": 4,
+          "median_ppm": 5104166.666666667,
+          "median_price": 202500000.0
+        }
+      }
+    },
+    "DHA Defence Phase 3, DHA Defence": {
+      "count": 1,
+      "tier": "budget",
+      "median_price": 109500000.0,
+      "median_price_per_marla": 3650000.0,
+      "p10_price": 109500000.0,
+      "p90_price": 109500000.0,
+      "median_area_marla": 30.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "20+": {
+          "count": 1,
+          "median_ppm": 3650000.0,
+          "median_price": 109500000.0
+        }
+      }
+    },
+    "DHA Defence Phase 5, DHA Defence": {
+      "count": 5,
+      "tier": "premium",
+      "median_price": 69500000.0,
+      "median_price_per_marla": 5875000.0,
+      "p10_price": 60200000.0,
+      "p90_price": 88800000.0,
+      "median_area_marla": 10.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 2.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.5,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 2,
+          "median_ppm": 7375000.0,
+          "median_price": 73750000.0
+        },
+        "14-20": {
+          "count": 2,
+          "median_ppm": 5089285.714285715,
+          "median_price": 87000000.0
+        },
+        "7-9": {
+          "count": 1,
+          "median_ppm": 5875000.0,
+          "median_price": 47000000.0
+        }
+      }
+    },
+    "DHA Phase 1 - Sector F, DHA Defence Phase 1": {
+      "count": 1,
+      "tier": "premium",
+      "median_price": 260000000.0,
+      "median_price_per_marla": 4814814.814814814,
+      "p10_price": 260000000.0,
+      "p90_price": 260000000.0,
+      "median_area_marla": 54.0,
+      "median_bedrooms": 7,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 5.0,
+      "median_servant_quarters": 2.0,
+      "median_store_rooms": 2.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "20+": {
+          "count": 1,
+          "median_ppm": 4814814.814814814,
+          "median_price": 260000000.0
+        }
+      }
+    },
+    "DHA Phase 2 - Sector B, DHA Defence Phase 2": {
+      "count": 3,
+      "tier": "premium",
+      "median_price": 140000000.0,
+      "median_price_per_marla": 7000000.0,
+      "p10_price": 133000000.0,
+      "p90_price": 143500000.0,
+      "median_area_marla": 20.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.5,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.5,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 2,
+          "median_ppm": 7125000.0,
+          "median_price": 142500000.0
+        },
+        "20+": {
+          "count": 1,
+          "median_ppm": 5909090.909090909,
+          "median_price": 130000000.0
+        }
+      }
+    },
+    "DHA Phase 2 - Sector D, DHA Defence Phase 2": {
+      "count": 2,
+      "tier": "premium",
+      "median_price": 123500000.0,
+      "median_price_per_marla": 6175000.0,
+      "p10_price": 104950000.0,
+      "p90_price": 142050000.0,
+      "median_area_marla": 20.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 5,
+      "median_parking_spaces": 4.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.5,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 2,
+          "median_ppm": 6175000.0,
+          "median_price": 123500000.0
+        }
+      }
+    },
+    "DHA Phase 2 - Sector F, DHA Defence Phase 2": {
+      "count": 1,
+      "tier": "budget",
+      "median_price": 79500000.0,
+      "median_price_per_marla": 3975000.0,
+      "p10_price": 79500000.0,
+      "p90_price": 79500000.0,
+      "median_area_marla": 20.0,
+      "median_bedrooms": 6,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 1,
+          "median_ppm": 3975000.0,
+          "median_price": 79500000.0
+        }
+      }
+    },
+    "DHA Phase 3 - Block B, DHA Defence Phase 3": {
+      "count": 3,
+      "tier": "premium",
+      "median_price": 88000000.0,
+      "median_price_per_marla": 4400000.0,
+      "p10_price": 82400000.0,
+      "p90_price": 99900000.0,
+      "median_area_marla": 20.0,
+      "median_bedrooms": 6,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 3.5,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 2,
+          "median_ppm": 4825000.0,
+          "median_price": 96500000.0
+        },
+        "20+": {
+          "count": 1,
+          "median_ppm": 3076923.076923077,
+          "median_price": 80000000.0
+        }
+      }
+    },
+    "DHA Phase 5 - Sector C, DHA Defence Phase 5": {
+      "count": 1,
+      "tier": "budget",
+      "median_price": 160000000.0,
+      "median_price_per_marla": 3200000.0,
+      "p10_price": 160000000.0,
+      "p90_price": 160000000.0,
+      "median_area_marla": 50.0,
+      "median_bedrooms": 4,
+      "median_bathrooms": 5,
+      "median_parking_spaces": 4.0,
+      "median_servant_quarters": 2.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "20+": {
+          "count": 1,
+          "median_ppm": 3200000.0,
+          "median_price": 160000000.0
+        }
+      }
+    },
+    "DHA Phase 5 - Sector D, DHA Defence Phase 5": {
+      "count": 1,
+      "tier": "premium",
+      "median_price": 60000000.0,
+      "median_price_per_marla": 6000000.0,
+      "p10_price": 60000000.0,
+      "p90_price": 60000000.0,
+      "median_area_marla": 10.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 1,
+          "median_ppm": 6000000.0,
+          "median_price": 60000000.0
+        }
+      }
+    },
+    "DHA Phase 5 - Sector J, DHA Defence Phase 5": {
+      "count": 1,
+      "tier": "premium",
+      "median_price": 78000000.0,
+      "median_price_per_marla": 7800000.0,
+      "p10_price": 78000000.0,
+      "p90_price": 78000000.0,
+      "median_area_marla": 10.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 7,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 1,
+          "median_ppm": 7800000.0,
+          "median_price": 78000000.0
+        }
+      }
+    },
+    "DHA Valley - Oleander Sector, DHA Valley": {
+      "count": 1,
+      "tier": "budget",
+      "median_price": 8500000.0,
+      "median_price_per_marla": 1700000.0,
+      "p10_price": 8500000.0,
+      "p90_price": 8500000.0,
+      "median_area_marla": 5.0,
+      "median_bedrooms": 2,
+      "median_bathrooms": 2,
+      "median_parking_spaces": 1.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "5-6": {
+          "count": 1,
+          "median_ppm": 1700000.0,
+          "median_price": 8500000.0
+        }
+      }
+    },
+    "DHA Valley, DHA Defence": {
+      "count": 1,
+      "tier": "budget",
+      "median_price": 14800000.0,
+      "median_price_per_marla": 1850000.0,
+      "p10_price": 14800000.0,
+      "p90_price": 14800000.0,
+      "median_area_marla": 8.0,
+      "median_bedrooms": 3,
+      "median_bathrooms": 4,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "7-9": {
+          "count": 1,
+          "median_ppm": 1850000.0,
+          "median_price": 14800000.0
+        }
+      }
+    },
+    "E-11, Islamabad": {
+      "count": 2,
+      "tier": "ultra",
+      "median_price": 108500000.0,
+      "median_price_per_marla": 7687500.0,
+      "p10_price": 93450000.0,
+      "p90_price": 123550000.0,
+      "median_area_marla": 14.0,
+      "median_bedrooms": 7,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 2.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 1,
+          "median_ppm": 7250000.0,
+          "median_price": 87000000.0
+        },
+        "14-20": {
+          "count": 1,
+          "median_ppm": 8125000.0,
+          "median_price": 130000000.0
+        }
+      }
+    },
+    "E-17, Islamabad": {
+      "count": 1,
+      "tier": "budget",
+      "median_price": 13000000.0,
+      "median_price_per_marla": 2600000.0,
+      "p10_price": 13000000.0,
+      "p90_price": 13000000.0,
+      "median_area_marla": 5.0,
+      "median_bedrooms": 4,
+      "median_bathrooms": 5,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "5-6": {
+          "count": 1,
+          "median_ppm": 2600000.0,
+          "median_price": 13000000.0
+        }
+      }
+    },
+    "E-7, Islamabad": {
+      "count": 2,
+      "tier": "ultra",
+      "median_price": 550000000.0,
+      "median_price_per_marla": 14769345.238095239,
+      "p10_price": 480000000.0,
+      "p90_price": 620000000.0,
+      "median_area_marla": 37.0,
+      "median_bedrooms": 7,
+      "median_bathrooms": 2,
+      "median_parking_spaces": 5.0,
+      "median_servant_quarters": 1.5,
+      "median_store_rooms": 1.5,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "20+": {
+          "count": 2,
+          "median_ppm": 14769345.238095239,
+          "median_price": 550000000.0
+        }
+      }
+    },
+    "Eighteen, Kashmir Highway": {
+      "count": 3,
+      "tier": "mid",
+      "median_price": 63700000.0,
+      "median_price_per_marla": 4109677.419354839,
+      "p10_price": 43610000.0,
+      "p90_price": 264110000.0,
+      "median_area_marla": 15.5,
+      "median_bedrooms": 5,
+      "median_bathrooms": 5,
+      "median_parking_spaces": 2.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 1,
+          "median_ppm": 3500000.0,
+          "median_price": 35000000.0
+        },
+        "14-20": {
+          "count": 1,
+          "median_ppm": 4109677.419354839,
+          "median_price": 63700000.0
+        },
+        "20+": {
+          "count": 1,
+          "median_ppm": 4375000.0,
+          "median_price": 350000000.0
+        }
+      }
+    },
+    "Emaar Canyon Views - Alma 1 Block, Emaar Canyon Views": {
+      "count": 1,
+      "tier": "budget",
+      "median_price": 36000000.0,
+      "median_price_per_marla": 3600000.0,
+      "p10_price": 36000000.0,
+      "p90_price": 36000000.0,
+      "median_area_marla": 10.0,
+      "median_bedrooms": 3,
+      "median_bathrooms": 4,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 1,
+          "median_ppm": 3600000.0,
+          "median_price": 36000000.0
+        }
+      }
+    },
+    "F-10/1, F-10": {
+      "count": 2,
+      "tier": "premium",
+      "median_price": 262500000.0,
+      "median_price_per_marla": 8179347.826086957,
+      "p10_price": 201250000.0,
+      "p90_price": 323750000.0,
+      "median_area_marla": 33.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 8.0,
+      "median_servant_quarters": 3.0,
+      "median_store_rooms": 1.5,
+      "median_kitchens": 3.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 1,
+          "median_ppm": 8750000.0,
+          "median_price": 175000000.0
+        },
+        "20+": {
+          "count": 1,
+          "median_ppm": 7608695.652173913,
+          "median_price": 350000000.0
+        }
+      }
+    },
+    "F-10/2, F-10": {
+      "count": 4,
+      "tier": "premium",
+      "median_price": 245000000.0,
+      "median_price_per_marla": 9807692.307692308,
+      "p10_price": 179500000.0,
+      "p90_price": 305000000.0,
+      "median_area_marla": 25.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 4.0,
+      "median_servant_quarters": 2.0,
+      "median_store_rooms": 1.5,
+      "median_kitchens": 1.5,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 1,
+          "median_ppm": 10000000.0,
+          "median_price": 130000000.0
+        },
+        "20+": {
+          "count": 3,
+          "median_ppm": 9615384.615384616,
+          "median_price": 250000000.0
+        }
+      }
+    },
+    "F-10/3, F-10": {
+      "count": 5,
+      "tier": "premium",
+      "median_price": 230000000.0,
+      "median_price_per_marla": 9500000.0,
+      "p10_price": 38300000.0,
+      "p90_price": 298000000.0,
+      "median_area_marla": 24.0,
+      "median_bedrooms": 4,
+      "median_bathrooms": 5,
+      "median_parking_spaces": 4.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "20+": {
+          "count": 3,
+          "median_ppm": 8333333.333333333,
+          "median_price": 230000000.0
+        },
+        "5-6": {
+          "count": 2,
+          "median_ppm": 9562500.0,
+          "median_price": 38250000.0
+        }
+      }
+    },
+    "F-10/4, F-10": {
+      "count": 1,
+      "tier": "premium",
+      "median_price": 175000000.0,
+      "median_price_per_marla": 8750000.0,
+      "p10_price": 175000000.0,
+      "p90_price": 175000000.0,
+      "median_area_marla": 20.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 5,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 1,
+          "median_ppm": 8750000.0,
+          "median_price": 175000000.0
+        }
+      }
+    },
+    "F-11, Islamabad": {
+      "count": 2,
+      "tier": "premium",
+      "median_price": 160000000.0,
+      "median_price_per_marla": 7836538.461538462,
+      "p10_price": 146000000.0,
+      "p90_price": 174000000.0,
+      "median_area_marla": 21.0,
+      "median_bedrooms": 6,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 7.0,
+      "median_servant_quarters": 4.5,
+      "median_store_rooms": 2.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 1,
+          "median_ppm": 8750000.0,
+          "median_price": 140000000.0
+        },
+        "20+": {
+          "count": 1,
+          "median_ppm": 6923076.923076923,
+          "median_price": 180000000.0
+        }
+      }
+    },
+    "F-11/3, F-11": {
+      "count": 1,
+      "tier": "premium",
+      "median_price": 184300000.0,
+      "median_price_per_marla": 9215000.0,
+      "p10_price": 184300000.0,
+      "p90_price": 184300000.0,
+      "median_area_marla": 20.0,
+      "median_bedrooms": 7,
+      "median_bathrooms": 7,
+      "median_parking_spaces": 4.0,
+      "median_servant_quarters": 2.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 1,
+          "median_ppm": 9215000.0,
+          "median_price": 184300000.0
+        }
+      }
+    },
+    "F-11/4, F-11": {
+      "count": 1,
+      "tier": "premium",
+      "median_price": 200000000.0,
+      "median_price_per_marla": 10000000.0,
+      "p10_price": 200000000.0,
+      "p90_price": 200000000.0,
+      "median_area_marla": 20.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 5.0,
+      "median_servant_quarters": 2.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 1,
+          "median_ppm": 10000000.0,
+          "median_price": 200000000.0
+        }
+      }
+    },
+    "F-15/1, F-15": {
+      "count": 1,
+      "tier": "mid",
+      "median_price": 48000000.0,
+      "median_price_per_marla": 4800000.0,
+      "p10_price": 48000000.0,
+      "p90_price": 48000000.0,
+      "median_area_marla": 10.0,
+      "median_bedrooms": 6,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 3.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 1,
+          "median_ppm": 4800000.0,
+          "median_price": 48000000.0
+        }
+      }
+    },
+    "F-6, Islamabad": {
+      "count": 11,
+      "tier": "ultra",
+      "median_price": 720000000.0,
+      "median_price_per_marla": 14905660.37735849,
+      "p10_price": 237500000.0,
+      "p90_price": 1200000000.0,
+      "median_area_marla": 40.0,
+      "median_bedrooms": 7,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 5.0,
+      "median_servant_quarters": 2.0,
+      "median_store_rooms": 2.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 1,
+          "median_ppm": 14905660.37735849,
+          "median_price": 158000000.0
+        },
+        "14-20": {
+          "count": 3,
+          "median_ppm": 13483146.06741573,
+          "median_price": 240000000.0
+        },
+        "20+": {
+          "count": 7,
+          "median_ppm": 18000000.0,
+          "median_price": 1000000000.0
+        }
+      }
+    },
+    "F-6/1, F-6": {
+      "count": 1,
+      "tier": "ultra",
+      "median_price": 200000000.0,
+      "median_price_per_marla": 11235955.056179775,
+      "p10_price": 200000000.0,
+      "p90_price": 200000000.0,
+      "median_area_marla": 17.8,
+      "median_bedrooms": 4,
+      "median_bathrooms": 4,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 1,
+          "median_ppm": 11235955.056179775,
+          "median_price": 200000000.0
+        }
+      }
+    },
+    "F-6/3, F-6": {
+      "count": 3,
+      "tier": "ultra",
+      "median_price": 465000000.0,
+      "median_price_per_marla": 13461538.461538462,
+      "p10_price": 384500000.0,
+      "p90_price": 524500000.0,
+      "median_area_marla": 40.0,
+      "median_bedrooms": 6,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 5.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "20+": {
+          "count": 3,
+          "median_ppm": 13461538.461538462,
+          "median_price": 465000000.0
+        }
+      }
+    },
+    "F-6/4, F-6": {
+      "count": 1,
+      "tier": "ultra",
+      "median_price": 1000000000.0,
+      "median_price_per_marla": 23809523.80952381,
+      "p10_price": 1000000000.0,
+      "p90_price": 1000000000.0,
+      "median_area_marla": 42.0,
+      "median_bedrooms": 8,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 6.0,
+      "median_servant_quarters": 3.0,
+      "median_store_rooms": 2.0,
+      "median_kitchens": 3.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "20+": {
+          "count": 1,
+          "median_ppm": 23809523.80952381,
+          "median_price": 1000000000.0
+        }
+      }
+    },
+    "F-7, Islamabad": {
+      "count": 23,
+      "tier": "ultra",
+      "median_price": 450000000.0,
+      "median_price_per_marla": 13750000.0,
+      "p10_price": 291500000.0,
+      "p90_price": 698999999.9999999,
+      "median_area_marla": 36.0,
+      "median_bedrooms": 6,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 4.5,
+      "median_servant_quarters": 2.0,
+      "median_store_rooms": 2.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 6,
+          "median_ppm": 14500000.0,
+          "median_price": 290000000.0
+        },
+        "20+": {
+          "count": 17,
+          "median_ppm": 11904761.904761905,
+          "median_price": 460000000.0
+        }
+      }
+    },
+    "F-7/1, F-7": {
+      "count": 1,
+      "tier": "ultra",
+      "median_price": 450000000.0,
+      "median_price_per_marla": 9000000.0,
+      "p10_price": 450000000.0,
+      "p90_price": 450000000.0,
+      "median_area_marla": 50.0,
+      "median_bedrooms": 7,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 5.0,
+      "median_servant_quarters": 2.0,
+      "median_store_rooms": 2.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "20+": {
+          "count": 1,
+          "median_ppm": 9000000.0,
+          "median_price": 450000000.0
+        }
+      }
+    },
+    "F-7/2, F-7": {
+      "count": 1,
+      "tier": "ultra",
+      "median_price": 299000000.0,
+      "median_price_per_marla": 14950000.0,
+      "p10_price": 299000000.0,
+      "p90_price": 299000000.0,
+      "median_area_marla": 20.0,
+      "median_bedrooms": 7,
+      "median_bathrooms": 7,
+      "median_parking_spaces": 4.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 2.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 1,
+          "median_ppm": 14950000.0,
+          "median_price": 299000000.0
+        }
+      }
+    },
+    "F-7/3, F-7": {
+      "count": 1,
+      "tier": "ultra",
+      "median_price": 800000000.0,
+      "median_price_per_marla": 10000000.0,
+      "p10_price": 800000000.0,
+      "p90_price": 800000000.0,
+      "median_area_marla": 80.0,
+      "median_bedrooms": 10,
+      "median_bathrooms": 0,
+      "median_parking_spaces": 1.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "20+": {
+          "count": 1,
+          "median_ppm": 10000000.0,
+          "median_price": 800000000.0
+        }
+      }
+    },
+    "F-8, Islamabad": {
+      "count": 17,
+      "tier": "ultra",
+      "median_price": 380000000.0,
+      "median_price_per_marla": 11125000.0,
+      "p10_price": 248000000.0,
+      "p90_price": 680000000.0,
+      "median_area_marla": 36.0,
+      "median_bedrooms": 7,
+      "median_bathrooms": 0,
+      "median_parking_spaces": 5.0,
+      "median_servant_quarters": 2.0,
+      "median_store_rooms": 2.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 4,
+          "median_ppm": 11562500.0,
+          "median_price": 231250000.0
+        },
+        "20+": {
+          "count": 13,
+          "median_ppm": 10937500.0,
+          "median_price": 400000000.0
+        }
+      }
+    },
+    "Faisal Margalla City, B-17": {
+      "count": 1,
+      "tier": "mid",
+      "median_price": 32500000.0,
+      "median_price_per_marla": 6500000.0,
+      "p10_price": 32500000.0,
+      "p90_price": 32500000.0,
+      "median_area_marla": 5.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 5,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "5-6": {
+          "count": 1,
+          "median_ppm": 6500000.0,
+          "median_price": 32500000.0
+        }
+      }
+    },
+    "Faisal Town - F-18, Islamabad": {
+      "count": 4,
+      "tier": "mid",
+      "median_price": 40500000.0,
+      "median_price_per_marla": 4745000.0,
+      "p10_price": 36900000.0,
+      "p90_price": 46795000.0,
+      "median_area_marla": 9.0,
+      "median_bedrooms": 4,
+      "median_bathrooms": 5,
+      "median_parking_spaces": 2.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 2,
+          "median_ppm": 4645000.0,
+          "median_price": 46450000.0
+        },
+        "7-9": {
+          "count": 2,
+          "median_ppm": 4964285.714285715,
+          "median_price": 37000000.0
+        }
+      }
+    },
+    "Faisal Town Phase 1 - Block A, Faisal Town Phase 1": {
+      "count": 1,
+      "tier": "mid",
+      "median_price": 145000000.0,
+      "median_price_per_marla": 7250000.0,
+      "p10_price": 145000000.0,
+      "p90_price": 145000000.0,
+      "median_area_marla": 20.0,
+      "median_bedrooms": 11,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 2.0,
+      "median_kitchens": 3.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 1,
+          "median_ppm": 7250000.0,
+          "median_price": 145000000.0
+        }
+      }
+    },
+    "Faisal Town Phase 1 - Block C, Faisal Town Phase 1": {
+      "count": 4,
+      "tier": "mid",
+      "median_price": 29750000.0,
+      "median_price_per_marla": 5800000.0,
+      "p10_price": 28950000.0,
+      "p90_price": 34400000.0,
+      "median_area_marla": 5.0,
+      "median_bedrooms": 4,
+      "median_bathrooms": 4,
+      "median_parking_spaces": 2.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 2.0,
+      "median_kitchens": 1.0,
+      "median_drawing_rooms": 1.5,
+      "bands": {
+        "5-6": {
+          "count": 3,
+          "median_ppm": 5900000.0,
+          "median_price": 29500000.0
+        },
+        "7-9": {
+          "count": 1,
+          "median_ppm": 4750000.0,
+          "median_price": 38000000.0
+        }
+      }
+    },
+    "Federation Housing Society - O-9, National Police Foundation O-9": {
+      "count": 1,
+      "tier": "mid",
+      "median_price": 37500000.0,
+      "median_price_per_marla": 5357142.857142857,
+      "p10_price": 37500000.0,
+      "p90_price": 37500000.0,
+      "median_area_marla": 7.0,
+      "median_bedrooms": 4,
+      "median_bathrooms": 5,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "7-9": {
+          "count": 1,
+          "median_ppm": 5357142.857142857,
+          "median_price": 37500000.0
+        }
+      }
+    },
+    "G-10/1, G-10": {
+      "count": 1,
+      "tier": "premium",
+      "median_price": 70000000.0,
+      "median_price_per_marla": 8750000.0,
+      "p10_price": 70000000.0,
+      "p90_price": 70000000.0,
+      "median_area_marla": 8.0,
+      "median_bedrooms": 4,
+      "median_bathrooms": 5,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "7-9": {
+          "count": 1,
+          "median_ppm": 8750000.0,
+          "median_price": 70000000.0
+        }
+      }
+    },
+    "G-10/3, G-10": {
+      "count": 1,
+      "tier": "mid",
+      "median_price": 145000000.0,
+      "median_price_per_marla": 6041666.666666667,
+      "p10_price": 145000000.0,
+      "p90_price": 145000000.0,
+      "median_area_marla": 24.0,
+      "median_bedrooms": 4,
+      "median_bathrooms": 4,
+      "median_parking_spaces": 30.0,
+      "median_servant_quarters": 2.0,
+      "median_store_rooms": 2.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "20+": {
+          "count": 1,
+          "median_ppm": 6041666.666666667,
+          "median_price": 145000000.0
+        }
+      }
+    },
+    "G-10/4, G-10": {
+      "count": 2,
+      "tier": "premium",
+      "median_price": 96250000.0,
+      "median_price_per_marla": 8125000.0,
+      "p10_price": 90125000.0,
+      "p90_price": 102375000.0,
+      "median_area_marla": 12.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 5,
+      "median_parking_spaces": 2.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 1,
+          "median_ppm": 8750000.0,
+          "median_price": 87500000.0
+        },
+        "14-20": {
+          "count": 1,
+          "median_ppm": 7500000.0,
+          "median_price": 105000000.0
+        }
+      }
+    },
+    "G-11/1, G-11": {
+      "count": 1,
+      "tier": "premium",
+      "median_price": 75000000.0,
+      "median_price_per_marla": 9375000.0,
+      "p10_price": 75000000.0,
+      "p90_price": 75000000.0,
+      "median_area_marla": 8.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 5,
+      "median_parking_spaces": 1.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "7-9": {
+          "count": 1,
+          "median_ppm": 9375000.0,
+          "median_price": 75000000.0
+        }
+      }
+    },
+    "G-13, Islamabad": {
+      "count": 11,
+      "tier": "premium",
+      "median_price": 117500000.0,
+      "median_price_per_marla": 9142857.142857144,
+      "p10_price": 68750000.0,
+      "p90_price": 129000000.0,
+      "median_area_marla": 14.0,
+      "median_bedrooms": 6,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 2.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 2.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 1,
+          "median_ppm": 9250000.0,
+          "median_price": 92500000.0
+        },
+        "14-20": {
+          "count": 6,
+          "median_ppm": 8660714.285714287,
+          "median_price": 126500000.0
+        },
+        "5-6": {
+          "count": 1,
+          "median_ppm": 9375000.0,
+          "median_price": 37500000.0
+        },
+        "7-9": {
+          "count": 3,
+          "median_ppm": 9187500.0,
+          "median_price": 70000000.0
+        }
+      }
+    },
+    "G-13/1, G-13": {
+      "count": 6,
+      "tier": "premium",
+      "median_price": 42500000.0,
+      "median_price_per_marla": 10625000.0,
+      "p10_price": 42125000.0,
+      "p90_price": 64725000.0,
+      "median_area_marla": 4.0,
+      "median_bedrooms": 4,
+      "median_bathrooms": 5,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.5,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 1,
+          "median_ppm": 9147887.323943662,
+          "median_price": 129900000.0
+        },
+        "5-6": {
+          "count": 5,
+          "median_ppm": 10625000.0,
+          "median_price": 42500000.0
+        }
+      }
+    },
+    "G-13/3, G-13": {
+      "count": 1,
+      "tier": "premium",
+      "median_price": 124000000.0,
+      "median_price_per_marla": 8857142.857142856,
+      "p10_price": 124000000.0,
+      "p90_price": 124000000.0,
+      "median_area_marla": 14.0,
+      "median_bedrooms": 6,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 1,
+          "median_ppm": 8857142.857142856,
+          "median_price": 124000000.0
+        }
+      }
+    },
+    "G-13/4, G-13": {
+      "count": 1,
+      "tier": "ultra",
+      "median_price": 44400000.0,
+      "median_price_per_marla": 11100000.0,
+      "p10_price": 44400000.0,
+      "p90_price": 44400000.0,
+      "median_area_marla": 4.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 5,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "5-6": {
+          "count": 1,
+          "median_ppm": 11100000.0,
+          "median_price": 44400000.0
+        }
+      }
+    },
+    "G-14, Islamabad": {
+      "count": 1,
+      "tier": "premium",
+      "median_price": 54500000.0,
+      "median_price_per_marla": 7785714.285714285,
+      "p10_price": 54500000.0,
+      "p90_price": 54500000.0,
+      "median_area_marla": 7.0,
+      "median_bedrooms": 4,
+      "median_bathrooms": 4,
+      "median_parking_spaces": 2.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 2.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "7-9": {
+          "count": 1,
+          "median_ppm": 7785714.285714285,
+          "median_price": 54500000.0
+        }
+      }
+    },
+    "G-14/3, G-14": {
+      "count": 2,
+      "tier": "premium",
+      "median_price": 59950000.0,
+      "median_price_per_marla": 8028571.428571428,
+      "p10_price": 59915000.0,
+      "p90_price": 59985000.0,
+      "median_area_marla": 7.5,
+      "median_bedrooms": 5,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "7-9": {
+          "count": 2,
+          "median_ppm": 8028571.428571428,
+          "median_price": 59950000.0
+        }
+      }
+    },
+    "G-14/4, G-14": {
+      "count": 4,
+      "tier": "premium",
+      "median_price": 136500000.0,
+      "median_price_per_marla": 7916666.666666666,
+      "p10_price": 72925000.0,
+      "p90_price": 191000000.0,
+      "median_area_marla": 19.0,
+      "median_bedrooms": 7,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 6.0,
+      "median_servant_quarters": 1.5,
+      "median_store_rooms": 1.5,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 1,
+          "median_ppm": 6642857.142857143,
+          "median_price": 93000000.0
+        },
+        "20+": {
+          "count": 2,
+          "median_ppm": 7916666.666666666,
+          "median_price": 190000000.0
+        },
+        "5-6": {
+          "count": 1,
+          "median_ppm": 11300000.0,
+          "median_price": 56500000.0
+        }
+      }
+    },
+    "G-15, Islamabad": {
+      "count": 3,
+      "tier": "mid",
+      "median_price": 34500000.0,
+      "median_price_per_marla": 4125000.0,
+      "p10_price": 33450000.0,
+      "p90_price": 46050000.0,
+      "median_area_marla": 8.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 2.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 2.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 1,
+          "median_ppm": 3642857.1428571427,
+          "median_price": 51000000.0
+        },
+        "7-9": {
+          "count": 2,
+          "median_ppm": 4218750.0,
+          "median_price": 33750000.0
+        }
+      }
+    },
+    "G-15/2, G-15": {
+      "count": 1,
+      "tier": "mid",
+      "median_price": 35000000.0,
+      "median_price_per_marla": 5000000.0,
+      "p10_price": 35000000.0,
+      "p90_price": 35000000.0,
+      "median_area_marla": 7.0,
+      "median_bedrooms": 4,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "7-9": {
+          "count": 1,
+          "median_ppm": 5000000.0,
+          "median_price": 35000000.0
+        }
+      }
+    },
+    "G-16, Islamabad": {
+      "count": 1,
+      "tier": "budget",
+      "median_price": 75000000.0,
+      "median_price_per_marla": 3750000.0,
+      "p10_price": 75000000.0,
+      "p90_price": 75000000.0,
+      "median_area_marla": 20.0,
+      "median_bedrooms": 6,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 5.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 2.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 2.0,
+      "bands": {
+        "14-20": {
+          "count": 1,
+          "median_ppm": 3750000.0,
+          "median_price": 75000000.0
+        }
+      }
+    },
+    "G-16/4, G-16": {
+      "count": 1,
+      "tier": "mid",
+      "median_price": 38000000.0,
+      "median_price_per_marla": 5428571.428571428,
+      "p10_price": 38000000.0,
+      "p90_price": 38000000.0,
+      "median_area_marla": 7.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "7-9": {
+          "count": 1,
+          "median_ppm": 5428571.428571428,
+          "median_price": 38000000.0
+        }
+      }
+    },
+    "G-9/4, G-9": {
+      "count": 2,
+      "tier": "premium",
+      "median_price": 68500000.0,
+      "median_price_per_marla": 8966666.666666668,
+      "p10_price": 65000000.0,
+      "p90_price": 72000000.0,
+      "median_area_marla": 8.0,
+      "median_bedrooms": 4,
+      "median_bathrooms": 4,
+      "median_parking_spaces": 1.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 1,
+          "median_ppm": 7350000.0,
+          "median_price": 73500000.0
+        },
+        "5-6": {
+          "count": 1,
+          "median_ppm": 10583333.333333334,
+          "median_price": 63500000.0
+        }
+      }
+    },
+    "Ghauri Town Phase 7, Ghauri Town": {
+      "count": 1,
+      "tier": "budget",
+      "median_price": 8500000.0,
+      "median_price_per_marla": 1700000.0,
+      "p10_price": 8500000.0,
+      "p90_price": 8500000.0,
+      "median_area_marla": 5.0,
+      "median_bedrooms": 3,
+      "median_bathrooms": 4,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "5-6": {
+          "count": 1,
+          "median_ppm": 1700000.0,
+          "median_price": 8500000.0
+        }
+      }
+    },
+    "Gulberg Residencia - Block C, Gulberg Residencia": {
+      "count": 1,
+      "tier": "mid",
+      "median_price": 42500000.0,
+      "median_price_per_marla": 6071428.571428572,
+      "p10_price": 42500000.0,
+      "p90_price": 42500000.0,
+      "median_area_marla": 7.0,
+      "median_bedrooms": 6,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 2.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 2.0,
+      "median_kitchens": 3.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "7-9": {
+          "count": 1,
+          "median_ppm": 6071428.571428572,
+          "median_price": 42500000.0
+        }
+      }
+    },
+    "Gulberg Residencia - Block E, Gulberg Residencia": {
+      "count": 1,
+      "tier": "mid",
+      "median_price": 125000000.0,
+      "median_price_per_marla": 6250000.0,
+      "p10_price": 125000000.0,
+      "p90_price": 125000000.0,
+      "median_area_marla": 20.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 1,
+          "median_ppm": 6250000.0,
+          "median_price": 125000000.0
+        }
+      }
+    },
+    "Gulberg Residencia - Block F, Gulberg Residencia": {
+      "count": 1,
+      "tier": "mid",
+      "median_price": 41000000.0,
+      "median_price_per_marla": 5857142.857142857,
+      "p10_price": 41000000.0,
+      "p90_price": 41000000.0,
+      "median_area_marla": 7.0,
+      "median_bedrooms": 4,
+      "median_bathrooms": 5,
+      "median_parking_spaces": 2.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "7-9": {
+          "count": 1,
+          "median_ppm": 5857142.857142857,
+          "median_price": 41000000.0
+        }
+      }
+    },
+    "Gulberg Residencia - Block L, Gulberg Residencia": {
+      "count": 3,
+      "tier": "mid",
+      "median_price": 35000000.0,
+      "median_price_per_marla": 5000000.0,
+      "p10_price": 34650000.0,
+      "p90_price": 43750000.0,
+      "median_area_marla": 7.0,
+      "median_bedrooms": 6,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 2.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "7-9": {
+          "count": 3,
+          "median_ppm": 5000000.0,
+          "median_price": 35000000.0
+        }
+      }
+    },
+    "Gulshan-e-Sehat 1, E-18": {
+      "count": 1,
+      "tier": "budget",
+      "median_price": 15000000.0,
+      "median_price_per_marla": 2142857.1428571427,
+      "p10_price": 15000000.0,
+      "p90_price": 15000000.0,
+      "median_area_marla": 7.0,
+      "median_bedrooms": 3,
+      "median_bathrooms": 3,
+      "median_parking_spaces": 1.0,
+      "median_servant_quarters": 2.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "7-9": {
+          "count": 1,
+          "median_ppm": 2142857.1428571427,
+          "median_price": 15000000.0
+        }
+      }
+    },
+    "H-13, Islamabad": {
+      "count": 2,
+      "tier": "budget",
+      "median_price": 15750000.0,
+      "median_price_per_marla": 3250000.0,
+      "p10_price": 9975000.0,
+      "p90_price": 21525000.0,
+      "median_area_marla": 4.5,
+      "median_bedrooms": 3,
+      "median_bathrooms": 3,
+      "median_parking_spaces": 2.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "5-6": {
+          "count": 2,
+          "median_ppm": 3250000.0,
+          "median_price": 15750000.0
+        }
+      }
+    },
+    "I-11, Islamabad": {
+      "count": 2,
+      "tier": "premium",
+      "median_price": 38500000.0,
+      "median_price_per_marla": 7770833.333333334,
+      "p10_price": 34300000.0,
+      "p90_price": 42700000.0,
+      "median_area_marla": 5.0,
+      "median_bedrooms": 4,
+      "median_bathrooms": 5,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "5-6": {
+          "count": 2,
+          "median_ppm": 7770833.333333334,
+          "median_price": 38500000.0
+        }
+      }
+    },
+    "I-14/1, I-14": {
+      "count": 1,
+      "tier": "mid",
+      "median_price": 32000000.0,
+      "median_price_per_marla": 5333333.333333333,
+      "p10_price": 32000000.0,
+      "p90_price": 32000000.0,
+      "median_area_marla": 6.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 1.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "5-6": {
+          "count": 1,
+          "median_ppm": 5333333.333333333,
+          "median_price": 32000000.0
+        }
+      }
+    },
+    "I-8, Islamabad": {
+      "count": 2,
+      "tier": "mid",
+      "median_price": 128750000.0,
+      "median_price_per_marla": 6766431.92488263,
+      "p10_price": 106875000.0,
+      "p90_price": 150625000.0,
+      "median_area_marla": 19.1,
+      "median_bedrooms": 4,
+      "median_bathrooms": 4,
+      "median_parking_spaces": 2.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 1,
+          "median_ppm": 6866197.183098592,
+          "median_price": 97500000.0
+        },
+        "20+": {
+          "count": 1,
+          "median_ppm": 6666666.666666667,
+          "median_price": 160000000.0
+        }
+      }
+    },
+    "I-8/3, I-8": {
+      "count": 1,
+      "tier": "premium",
+      "median_price": 115000000.0,
+      "median_price_per_marla": 9274193.548387097,
+      "p10_price": 115000000.0,
+      "p90_price": 115000000.0,
+      "median_area_marla": 12.4,
+      "median_bedrooms": 6,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 1,
+          "median_ppm": 9274193.548387097,
+          "median_price": 115000000.0
+        }
+      }
+    },
+    "Jinnah Gardens Phase 1, Jinnah Gardens": {
+      "count": 5,
+      "tier": "mid",
+      "median_price": 55000000.0,
+      "median_price_per_marla": 5583333.333333333,
+      "p10_price": 31200000.0,
+      "p90_price": 67000000.0,
+      "median_area_marla": 10.0,
+      "median_bedrooms": 6,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 1.5,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 3,
+          "median_ppm": 5583333.333333333,
+          "median_price": 67000000.0
+        },
+        "5-6": {
+          "count": 1,
+          "median_ppm": 5700000.0,
+          "median_price": 28500000.0
+        },
+        "7-9": {
+          "count": 1,
+          "median_ppm": 4714285.714285715,
+          "median_price": 33000000.0
+        }
+      }
+    },
+    "Jinnah Gardens, FECHS": {
+      "count": 2,
+      "tier": "mid",
+      "median_price": 34000000.0,
+      "median_price_per_marla": 5628571.428571429,
+      "p10_price": 29100000.0,
+      "p90_price": 38900000.0,
+      "median_area_marla": 6.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 1.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "5-6": {
+          "count": 1,
+          "median_ppm": 5400000.0,
+          "median_price": 27000000.0
+        },
+        "7-9": {
+          "count": 1,
+          "median_ppm": 5857142.857142857,
+          "median_price": 41000000.0
+        }
+      }
+    },
+    "Kuri Road, Islamabad": {
+      "count": 1,
+      "tier": "budget",
+      "median_price": 17000000.0,
+      "median_price_per_marla": 3400000.0,
+      "p10_price": 17000000.0,
+      "p90_price": 17000000.0,
+      "median_area_marla": 5.0,
+      "median_bedrooms": 7,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 1.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 6.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "5-6": {
+          "count": 1,
+          "median_ppm": 3400000.0,
+          "median_price": 17000000.0
+        }
+      }
+    },
+    "MPCHS - Block A, MPCHS - Multi Gardens": {
+      "count": 1,
+      "tier": "mid",
+      "median_price": 115000000.0,
+      "median_price_per_marla": 5750000.0,
+      "p10_price": 115000000.0,
+      "p90_price": 115000000.0,
+      "median_area_marla": 20.0,
+      "median_bedrooms": 8,
+      "median_bathrooms": 0,
+      "median_parking_spaces": 4.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 1,
+          "median_ppm": 5750000.0,
+          "median_price": 115000000.0
+        }
+      }
+    },
+    "MPCHS - Block B Extension 1, MPCHS - Multi Gardens": {
+      "count": 1,
+      "tier": "mid",
+      "median_price": 130000000.0,
+      "median_price_per_marla": 6500000.0,
+      "p10_price": 130000000.0,
+      "p90_price": 130000000.0,
+      "median_area_marla": 20.0,
+      "median_bedrooms": 8,
+      "median_bathrooms": 0,
+      "median_parking_spaces": 4.0,
+      "median_servant_quarters": 2.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 3.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 1,
+          "median_ppm": 6500000.0,
+          "median_price": 130000000.0
+        }
+      }
+    },
+    "MPCHS - Block B, MPCHS - Multi Gardens": {
+      "count": 3,
+      "tier": "mid",
+      "median_price": 120000000.0,
+      "median_price_per_marla": 5000000.0,
+      "p10_price": 90250000.0,
+      "p90_price": 120000000.0,
+      "median_area_marla": 24.0,
+      "median_bedrooms": 10,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 1.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 1,
+          "median_ppm": 5535714.285714285,
+          "median_price": 77500000.0
+        },
+        "20+": {
+          "count": 2,
+          "median_ppm": 5000000.0,
+          "median_price": 120000000.0
+        }
+      }
+    },
+    "MPCHS - Block C, MPCHS - Multi Gardens": {
+      "count": 2,
+      "tier": "mid",
+      "median_price": 52500000.0,
+      "median_price_per_marla": 5250000.0,
+      "p10_price": 45500000.0,
+      "p90_price": 59500000.0,
+      "median_area_marla": 10.0,
+      "median_bedrooms": 6,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 2,
+          "median_ppm": 5250000.0,
+          "median_price": 52500000.0
+        }
+      }
+    },
+    "MPCHS - Block C1, MPCHS - Multi Gardens": {
+      "count": 1,
+      "tier": "mid",
+      "median_price": 28000000.0,
+      "median_price_per_marla": 5600000.0,
+      "p10_price": 28000000.0,
+      "p90_price": 28000000.0,
+      "median_area_marla": 5.0,
+      "median_bedrooms": 0,
+      "median_bathrooms": 0,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "5-6": {
+          "count": 1,
+          "median_ppm": 5600000.0,
+          "median_price": 28000000.0
+        }
+      }
+    },
+    "MPCHS - Block E, MPCHS - Multi Gardens": {
+      "count": 2,
+      "tier": "mid",
+      "median_price": 52500000.0,
+      "median_price_per_marla": 5750000.0,
+      "p10_price": 43750000.0,
+      "p90_price": 61250000.0,
+      "median_area_marla": 9.0,
+      "median_bedrooms": 2,
+      "median_bathrooms": 3,
+      "median_parking_spaces": 10.0,
+      "median_servant_quarters": 2.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 2.0,
+      "bands": {
+        "10-12": {
+          "count": 1,
+          "median_ppm": 6500000.0,
+          "median_price": 65000000.0
+        },
+        "7-9": {
+          "count": 1,
+          "median_ppm": 5000000.0,
+          "median_price": 40000000.0
+        }
+      }
+    },
+    "MPCHS - Block F, MPCHS - Multi Gardens": {
+      "count": 1,
+      "tier": "mid",
+      "median_price": 21500000.0,
+      "median_price_per_marla": 4300000.0,
+      "p10_price": 21500000.0,
+      "p90_price": 21500000.0,
+      "median_area_marla": 5.0,
+      "median_bedrooms": 3,
+      "median_bathrooms": 4,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "5-6": {
+          "count": 1,
+          "median_ppm": 4300000.0,
+          "median_price": 21500000.0
+        }
+      }
+    },
+    "MPCHS - Multi Gardens, B-17": {
+      "count": 3,
+      "tier": "budget",
+      "median_price": 35500000.0,
+      "median_price_per_marla": 3760000.0,
+      "p10_price": 23810000.0,
+      "p90_price": 58950000.0,
+      "median_area_marla": 8.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 4.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 2.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 1,
+          "median_ppm": 3450000.0,
+          "median_price": 69000000.0
+        },
+        "5-6": {
+          "count": 1,
+          "median_ppm": 3760000.0,
+          "median_price": 18800000.0
+        },
+        "7-9": {
+          "count": 1,
+          "median_ppm": 4437500.0,
+          "median_price": 35500000.0
+        }
+      }
+    },
+    "Margalla View Housing Society, D-17": {
+      "count": 1,
+      "tier": "mid",
+      "median_price": 38500000.0,
+      "median_price_per_marla": 4139784.9462365587,
+      "p10_price": 38500000.0,
+      "p90_price": 38500000.0,
+      "median_area_marla": 9.3,
+      "median_bedrooms": 4,
+      "median_bathrooms": 5,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 1,
+          "median_ppm": 4139784.9462365587,
+          "median_price": 38500000.0
+        }
+      }
+    },
+    "Mumtaz City, Islamabad": {
+      "count": 1,
+      "tier": "mid",
+      "median_price": 41000000.0,
+      "median_price_per_marla": 4100000.0,
+      "p10_price": 41000000.0,
+      "p90_price": 41000000.0,
+      "median_area_marla": 10.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 1,
+          "median_ppm": 4100000.0,
+          "median_price": 41000000.0
+        }
+      }
+    },
+    "National Police Foundation O-9, Islamabad": {
+      "count": 1,
+      "tier": "mid",
+      "median_price": 30000000.0,
+      "median_price_per_marla": 6000000.0,
+      "p10_price": 30000000.0,
+      "p90_price": 30000000.0,
+      "median_area_marla": 5.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 5,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "5-6": {
+          "count": 1,
+          "median_ppm": 6000000.0,
+          "median_price": 30000000.0
+        }
+      }
+    },
+    "Naval Anchorage - Block E, Naval Anchorage": {
+      "count": 1,
+      "tier": "premium",
+      "median_price": 85000000.0,
+      "median_price_per_marla": 4250000.0,
+      "p10_price": 85000000.0,
+      "p90_price": 85000000.0,
+      "median_area_marla": 20.0,
+      "median_bedrooms": 6,
+      "median_bathrooms": 7,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 1,
+          "median_ppm": 4250000.0,
+          "median_price": 85000000.0
+        }
+      }
+    },
+    "Oleander Sector - DHA Homes Block A, DHA Valley - Oleander Sector": {
+      "count": 2,
+      "tier": "budget",
+      "median_price": 15650000.0,
+      "median_price_per_marla": 1956250.0,
+      "p10_price": 15545000.0,
+      "p90_price": 15755000.0,
+      "median_area_marla": 8.0,
+      "median_bedrooms": 3,
+      "median_bathrooms": 4,
+      "median_parking_spaces": 1.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.5,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "7-9": {
+          "count": 2,
+          "median_ppm": 1956250.0,
+          "median_price": 15650000.0
+        }
+      }
+    },
+    "Oleander Sector - DHA Homes, DHA Valley - Oleander Sector": {
+      "count": 1,
+      "tier": "budget",
+      "median_price": 8500000.0,
+      "median_price_per_marla": 1700000.0,
+      "p10_price": 8500000.0,
+      "p90_price": 8500000.0,
+      "median_area_marla": 5.0,
+      "median_bedrooms": 2,
+      "median_bathrooms": 2,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "5-6": {
+          "count": 1,
+          "median_ppm": 1700000.0,
+          "median_price": 8500000.0
+        }
+      }
+    },
+    "PHAF Officers Residencia, Kuri Road": {
+      "count": 2,
+      "tier": "mid",
+      "median_price": 42500000.0,
+      "median_price_per_marla": 5312500.0,
+      "p10_price": 42500000.0,
+      "p90_price": 42500000.0,
+      "median_area_marla": 8.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 1.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "7-9": {
+          "count": 2,
+          "median_ppm": 5312500.0,
+          "median_price": 42500000.0
+        }
+      }
+    },
+    "Park View - Block B, Park View City": {
+      "count": 1,
+      "tier": "premium",
+      "median_price": 28500000.0,
+      "median_price_per_marla": 5700000.0,
+      "p10_price": 28500000.0,
+      "p90_price": 28500000.0,
+      "median_area_marla": 5.0,
+      "median_bedrooms": 3,
+      "median_bathrooms": 4,
+      "median_parking_spaces": 4.0,
+      "median_servant_quarters": 2.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "5-6": {
+          "count": 1,
+          "median_ppm": 5700000.0,
+          "median_price": 28500000.0
+        }
+      }
+    },
+    "Park View - Block H, Park View City": {
+      "count": 1,
+      "tier": "premium",
+      "median_price": 35000000.0,
+      "median_price_per_marla": 7000000.0,
+      "p10_price": 35000000.0,
+      "p90_price": 35000000.0,
+      "median_area_marla": 5.0,
+      "median_bedrooms": 4,
+      "median_bathrooms": 5,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "5-6": {
+          "count": 1,
+          "median_ppm": 7000000.0,
+          "median_price": 35000000.0
+        }
+      }
+    },
+    "Park View City - Overseas Block, Park View City": {
+      "count": 2,
+      "tier": "premium",
+      "median_price": 20500000.0,
+      "median_price_per_marla": 4100000.0,
+      "p10_price": 16650000.0,
+      "p90_price": 24350000.0,
+      "median_area_marla": 5.0,
+      "median_bedrooms": 4,
+      "median_bathrooms": 4,
+      "median_parking_spaces": 1.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.5,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "5-6": {
+          "count": 2,
+          "median_ppm": 4100000.0,
+          "median_price": 20500000.0
+        }
+      }
+    },
+    "Rahman Enclave, Lehtrar Road": {
+      "count": 1,
+      "tier": "mid",
+      "median_price": 69500000.0,
+      "median_price_per_marla": 6950000.0,
+      "p10_price": 69500000.0,
+      "p90_price": 69500000.0,
+      "median_area_marla": 10.0,
+      "median_bedrooms": 0,
+      "median_bathrooms": 0,
+      "median_parking_spaces": 2.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 3.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 1,
+          "median_ppm": 6950000.0,
+          "median_price": 69500000.0
+        }
+      }
+    },
+    "Shah Allah Ditta, Islamabad": {
+      "count": 1,
+      "tier": "budget",
+      "median_price": 11500000.0,
+      "median_price_per_marla": 2300000.0,
+      "p10_price": 11500000.0,
+      "p90_price": 11500000.0,
+      "median_area_marla": 5.0,
+      "median_bedrooms": 0,
+      "median_bathrooms": 0,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 2.0,
+      "median_store_rooms": 2.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "5-6": {
+          "count": 1,
+          "median_ppm": 2300000.0,
+          "median_price": 11500000.0
+        }
+      }
+    },
+    "Soan Garden - Block B, Soan Garden": {
+      "count": 1,
+      "tier": "budget",
+      "median_price": 58000000.0,
+      "median_price_per_marla": 4833333.333333333,
+      "p10_price": 58000000.0,
+      "p90_price": 58000000.0,
+      "median_area_marla": 12.0,
+      "median_bedrooms": 6,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 1,
+          "median_ppm": 4833333.333333333,
+          "median_price": 58000000.0
+        }
+      }
+    },
+    "Soan Garden - Block D, Soan Garden": {
+      "count": 1,
+      "tier": "budget",
+      "median_price": 42000000.0,
+      "median_price_per_marla": 4158415.8415841586,
+      "p10_price": 42000000.0,
+      "p90_price": 42000000.0,
+      "median_area_marla": 10.1,
+      "median_bedrooms": 7,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 2.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 2.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 1,
+          "median_ppm": 4158415.8415841586,
+          "median_price": 42000000.0
+        }
+      }
+    },
+    "Soan Garden - Block F, Soan Garden": {
+      "count": 1,
+      "tier": "budget",
+      "median_price": 49500000.0,
+      "median_price_per_marla": 3093750.0,
+      "p10_price": 49500000.0,
+      "p90_price": 49500000.0,
+      "median_area_marla": 16.0,
+      "median_bedrooms": 4,
+      "median_bathrooms": 5,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 1,
+          "median_ppm": 3093750.0,
+          "median_price": 49500000.0
+        }
+      }
+    },
+    "Soan Garden, Islamabad": {
+      "count": 1,
+      "tier": "budget",
+      "median_price": 42000000.0,
+      "median_price_per_marla": 2100000.0,
+      "p10_price": 42000000.0,
+      "p90_price": 42000000.0,
+      "median_area_marla": 20.0,
+      "median_bedrooms": 3,
+      "median_bathrooms": 4,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 1,
+          "median_ppm": 2100000.0,
+          "median_price": 42000000.0
+        }
+      }
+    },
+    "Sohan Valley, Islamabad": {
+      "count": 1,
+      "tier": "budget",
+      "median_price": 45000000.0,
+      "median_price_per_marla": 2647058.8235294116,
+      "p10_price": 45000000.0,
+      "p90_price": 45000000.0,
+      "median_area_marla": 17.0,
+      "median_bedrooms": 10,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 4.0,
+      "median_servant_quarters": 3.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 3.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 1,
+          "median_ppm": 2647058.8235294116,
+          "median_price": 45000000.0
+        }
+      }
+    },
+    "Tarlai, Islamabad": {
+      "count": 1,
+      "tier": "budget",
+      "median_price": 37000000.0,
+      "median_price_per_marla": 2846153.846153846,
+      "p10_price": 37000000.0,
+      "p90_price": 37000000.0,
+      "median_area_marla": 13.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 5,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 1,
+          "median_ppm": 2846153.846153846,
+          "median_price": 37000000.0
+        }
+      }
+    },
+    "Top City 1 - Block A, Top City 1": {
+      "count": 3,
+      "tier": "budget",
+      "median_price": 40000000.0,
+      "median_price_per_marla": 4000000.0,
+      "p10_price": 34400000.0,
+      "p90_price": 49100000.0,
+      "median_area_marla": 10.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 1.5,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 3,
+          "median_ppm": 4000000.0,
+          "median_price": 40000000.0
+        }
+      }
+    },
+    "Top City 1 - Block B, Top City 1": {
+      "count": 3,
+      "tier": "mid",
+      "median_price": 95000000.0,
+      "median_price_per_marla": 4750000.0,
+      "p10_price": 84500000.0,
+      "p90_price": 105500000.0,
+      "median_area_marla": 20.0,
+      "median_bedrooms": 10,
+      "median_bathrooms": 7,
+      "median_parking_spaces": 5.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 2.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "14-20": {
+          "count": 3,
+          "median_ppm": 4750000.0,
+          "median_price": 95000000.0
+        }
+      }
+    },
+    "Top City 1 - Block D, Top City 1": {
+      "count": 2,
+      "tier": "mid",
+      "median_price": 48500000.0,
+      "median_price_per_marla": 4850000.0,
+      "p10_price": 46750000.0,
+      "p90_price": 50250000.0,
+      "median_area_marla": 10.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 2.5,
+      "median_servant_quarters": 1.75,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 1.5,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 2,
+          "median_ppm": 4850000.0,
+          "median_price": 48500000.0
+        }
+      }
+    },
+    "Top City 1, Islamabad": {
+      "count": 12,
+      "tier": "mid",
+      "median_price": 58750000.0,
+      "median_price_per_marla": 5275000.0,
+      "p10_price": 42725000.0,
+      "p90_price": 72800000.0,
+      "median_area_marla": 10.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 2.75,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 9,
+          "median_ppm": 5500000.0,
+          "median_price": 55000000.0
+        },
+        "14-20": {
+          "count": 3,
+          "median_ppm": 3900000.0,
+          "median_price": 78000000.0
+        }
+      }
+    },
+    "Wapda Town Islamabad, C-19": {
+      "count": 1,
+      "tier": "budget",
+      "median_price": 42000000.0,
+      "median_price_per_marla": 2100000.0,
+      "p10_price": 42000000.0,
+      "p90_price": 42000000.0,
+      "median_area_marla": 20.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 3.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 2.0,
+      "bands": {
+        "14-20": {
+          "count": 1,
+          "median_ppm": 2100000.0,
+          "median_price": 42000000.0
+        }
+      }
+    },
+    "Zaraj Housing Scheme, Islamabad": {
+      "count": 4,
+      "tier": "mid",
+      "median_price": 56500000.0,
+      "median_price_per_marla": 5200000.0,
+      "p10_price": 51800000.0,
+      "p90_price": 60100000.0,
+      "median_area_marla": 10.0,
+      "median_bedrooms": 5,
+      "median_bathrooms": 6,
+      "median_parking_spaces": 2.0,
+      "median_servant_quarters": 1.0,
+      "median_store_rooms": 1.0,
+      "median_kitchens": 2.0,
+      "median_drawing_rooms": 1.0,
+      "bands": {
+        "10-12": {
+          "count": 3,
+          "median_ppm": 5400000.0,
+          "median_price": 54000000.0
+        },
+        "14-20": {
+          "count": 1,
+          "median_ppm": 4357142.857142857,
+          "median_price": 61000000.0
+        }
+      }
+    }
+  },
+  "location_map": {
+    "DHA Defence Phase 2, DHA Defence": "DHA Defence Phase 2, DHA Defence",
+    "Bahria Enclave - Sector N, Bahria Enclave": "Bahria Enclave - Sector N, Bahria Enclave",
+    "Top City 1, Islamabad": "Top City 1, Islamabad",
+    "F-7, Islamabad": "F-7, Islamabad",
+    "Margalla View Housing Society, D-17": "Other Islamabad",
+    "Faisal Town Phase 1 - Block C, Faisal Town Phase 1": "Faisal Town Phase 1 - Block C, Faisal Town Phase 1",
+    "Canary Residency, Faisal Hills": "Canary Residency, Faisal Hills",
+    "Bahria Enclave - Sector F1, Bahria Enclave": "Other Islamabad",
+    "DHA Defence Phase 1, DHA Defence": "DHA Defence Phase 1, DHA Defence",
+    "MPCHS - Block E, MPCHS - Multi Gardens": "MPCHS - Block E, MPCHS - Multi Gardens",
+    "G-13, Islamabad": "G-13, Islamabad",
+    "MPCHS - Block B, MPCHS - Multi Gardens": "MPCHS - Block B, MPCHS - Multi Gardens",
+    "G-14, Islamabad": "Other Islamabad",
+    "F-6, Islamabad": "F-6, Islamabad",
+    "G-13/1, G-13": "G-13/1, G-13",
+    "G-11, Islamabad": "Other Islamabad",
+    "B-17, Islamabad": "B-17, Islamabad",
+    "I-14/1, I-14": "Other Islamabad",
+    "Bahria Enclave - Sector I, Bahria Enclave": "Other Islamabad",
+    "D-17, Islamabad": "Other Islamabad",
+    "DHA Phase 2 - Sector B, DHA Defence Phase 2": "DHA Phase 2 - Sector B, DHA Defence Phase 2",
+    "MPCHS - Block F, MPCHS - Multi Gardens": "Other Islamabad",
+    "G-11/3, G-11": "Other Islamabad",
+    "MPCHS - Block C1, MPCHS - Multi Gardens": "Other Islamabad",
+    "G-14/4, G-14": "G-14/4, G-14",
+    "DHA Phase 2 - Sector C, DHA Defence Phase 2": "Other Islamabad",
+    "DHA Phase 1 - Sector E, DHA Defence Phase 1": "Other Islamabad",
+    "DHA Phase 2 - Sector D, DHA Defence Phase 2": "Other Islamabad",
+    "F-7/3, F-7": "Other Islamabad",
+    "F-8, Islamabad": "F-8, Islamabad",
+    "Top City 1 - Block B, Top City 1": "Top City 1 - Block B, Top City 1",
+    "Faisal Town Phase 1 - Block A, Faisal Town Phase 1": "Faisal Town Phase 1 - Block A, Faisal Town Phase 1",
+    "Jinnah Gardens Phase 1, Jinnah Gardens": "Jinnah Gardens Phase 1, Jinnah Gardens",
+    "F-6/3, F-6": "F-6/3, F-6",
+    "Zaraj Housing Scheme, Islamabad": "Zaraj Housing Scheme, Islamabad",
+    "Bani Gala, Islamabad": "Bani Gala, Islamabad",
+    "Chatha Bakhtawar, Islamabad": "Other Islamabad",
+    "F-10/1, F-10": "F-10/1, F-10",
+    "F-11/4, F-11": "Other Islamabad",
+    "DHA Phase 1 - Sector F, DHA Defence Phase 1": "Other Islamabad",
+    "DHA Phase 5 - Sector D, DHA Defence Phase 5": "Other Islamabad",
+    "DHA Phase 5 - Sector F, DHA Defence Phase 5": "DHA Phase 5 - Sector F, DHA Defence Phase 5",
+    "I-10/2, I-10": "Other Islamabad",
+    "Bahria Enclave, Bahria Town": "Bahria Enclave, Bahria Town",
+    "Top City 1 - Block D, Top City 1": "Top City 1 - Block D, Top City 1",
+    "Park View City - Overseas Block, Park View City": "Other Islamabad",
+    "MPCHS - Block C, MPCHS - Multi Gardens": "MPCHS - Block C, MPCHS - Multi Gardens",
+    "F-10/3, F-10": "F-10/3, F-10",
+    "Top City 1 - Block A, Top City 1": "Top City 1 - Block A, Top City 1",
+    "F-11/3, F-11": "Other Islamabad",
+    "G-10/1, G-10": "Other Islamabad",
+    "DHA Defence Phase 5, DHA Defence": "DHA Defence Phase 5, DHA Defence",
+    "E-11/4, E-11": "Other Islamabad",
+    "Rahman Enclave, Lehtrar Road": "Other Islamabad",
+    "Bahria Enclave - Sector H, Bahria Enclave": "Other Islamabad",
+    "PHAF Officers Residencia, Kuri Road": "Other Islamabad",
+    "E-7, Islamabad": "Other Islamabad",
+    "Eighteen, Kashmir Highway": "Eighteen, Kashmir Highway",
+    "D-12, Islamabad": "D-12, Islamabad",
+    "F-11/1, F-11": "Other Islamabad",
+    "Bahria Enclave - Sector C2, Bahria Enclave": "Other Islamabad",
+    "I-8, Islamabad": "Other Islamabad",
+    "F-6/1, F-6": "Other Islamabad",
+    "Bahria Enclave - Sector C1, Bahria Enclave": "Other Islamabad",
+    "Bahria Enclave - Sector C, Bahria Enclave": "Bahria Enclave - Sector C, Bahria Enclave",
+    "DHA Phase 3 - Block B, DHA Defence Phase 3": "DHA Phase 3 - Block B, DHA Defence Phase 3",
+    "MPCHS - Multi Gardens, B-17": "MPCHS - Multi Gardens, B-17",
+    "G-15, Islamabad": "G-15, Islamabad",
+    "Shah Allah Ditta, Islamabad": "Other Islamabad",
+    "G-13/3, G-13": "Other Islamabad",
+    "Kuri Road, Islamabad": "Other Islamabad",
+    "I-14/4, I-14": "Other Islamabad",
+    "Emaar Canyon Views - Alma 1 Block, Emaar Canyon Views": "Other Islamabad",
+    "I-8/3, I-8": "Other Islamabad",
+    "D-12/1, D-12": "D-12/1, D-12",
+    "Bahria Enclave - Sector A, Bahria Enclave": "Other Islamabad",
+    "D-12/3, D-12": "Other Islamabad",
+    "Gulberg Residencia - Block F, Gulberg Residencia": "Other Islamabad",
+    "G-15/2, G-15": "Other Islamabad",
+    "F-15/1, F-15": "Other Islamabad",
+    "Ghauri Town Phase 7, Ghauri Town": "Other Islamabad",
+    "Faisal Margalla City, B-17": "Other Islamabad",
+    "F-7/1, F-7": "Other Islamabad",
+    "I-11, Islamabad": "Other Islamabad",
+    "H-13, Islamabad": "Other Islamabad",
+    "DHA Phase 2 - Sector F, DHA Defence Phase 2": "Other Islamabad",
+    "DHA Defence Phase 3, DHA Defence": "Other Islamabad",
+    "F-10/2, F-10": "F-10/2, F-10",
+    "Faisal Town - F-18, Islamabad": "Faisal Town - F-18, Islamabad",
+    "G-13/4, G-13": "Other Islamabad",
+    "G-9/4, G-9": "Other Islamabad",
+    "G-10/4, G-10": "Other Islamabad",
+    "G-14/3, G-14": "Other Islamabad",
+    "Gulberg Residencia - Block L, Gulberg Residencia": "Gulberg Residencia - Block L, Gulberg Residencia",
+    "Bahria Enclave - Sector B1, Bahria Enclave": "Other Islamabad",
+    "Gulberg Residencia - Block E, Gulberg Residencia": "Other Islamabad",
+    "Soan Garden - Block D, Soan Garden": "Other Islamabad",
+    "F-11, Islamabad": "Other Islamabad",
+    "Federation Housing Society - O-9, National Police Foundation O-9": "Other Islamabad",
+    "Gulberg Residencia - Block I, Gulberg Residencia": "Other Islamabad",
+    "Soan Garden - Block B, Soan Garden": "Other Islamabad",
+    "Soan Garden - Block F, Soan Garden": "Other Islamabad",
+    "Soan Garden, Islamabad": "Other Islamabad",
+    "G-10/2, G-10": "Other Islamabad",
+    "F-10/4, F-10": "Other Islamabad",
+    "Mumtaz City, Islamabad": "Other Islamabad",
+    "Naval Anchorage - Block E, Naval Anchorage": "Other Islamabad",
+    "F-7/2, F-7": "Other Islamabad",
+    "E-17, Islamabad": "Other Islamabad",
+    "G-11/1, G-11": "Other Islamabad",
+    "E-11, Islamabad": "Other Islamabad",
+    "Gulshan-e-Sehat 1, E-18": "Other Islamabad",
+    "National Police Foundation O-9, Islamabad": "Other Islamabad",
+    "Jinnah Gardens, FECHS": "Other Islamabad",
+    "DHA Phase 5 - Sector C, DHA Defence Phase 5": "Other Islamabad",
+    "I-10, Islamabad": "Other Islamabad",
+    "Oleander Sector - DHA Homes, DHA Valley - Oleander Sector": "Other Islamabad",
+    "DHA Valley - Oleander Sector, DHA Valley": "Other Islamabad",
+    "DHA Valley, DHA Defence": "Other Islamabad",
+    "Oleander Sector - DHA Homes Block A, DHA Valley - Oleander Sector": "Other Islamabad",
+    "MPCHS - Block B Extension 1, MPCHS - Multi Gardens": "Other Islamabad",
+    "MPCHS - Block A, MPCHS - Multi Gardens": "Other Islamabad",
+    "E-17/3, E-17": "Other Islamabad",
+    "Gulberg Residencia - Block C, Gulberg Residencia": "Other Islamabad",
+    "Bahria Enclave - Sector M, Bahria Enclave": "Other Islamabad",
+    "CBR Town Phase 1 - Block D, CBR Town Phase 1": "Other Islamabad",
+    "G-16, Islamabad": "Other Islamabad",
+    "PWD Housing Society - Block A, PWD Housing Scheme": "Other Islamabad",
+    "D-12/4, D-12": "Other Islamabad",
+    "Tarlai, Islamabad": "Other Islamabad",
+    "Park View - Block B, Park View City": "Other Islamabad",
+    "G-16/4, G-16": "Other Islamabad",
+    "F-6/4, F-6": "Other Islamabad",
+    "F-17, Islamabad": "Other Islamabad",
+    "DHA Phase 5 - Sector J, DHA Defence Phase 5": "Other Islamabad",
+    "Wapda Town Islamabad, C-19": "Other Islamabad",
+    "Athal, Islamabad": "Other Islamabad",
+    "Park View - Block H, Park View City": "Other Islamabad",
+    "Sohan Valley, Islamabad": "Other Islamabad",
+    "G-10/3, G-10": "Other Islamabad"
+  },
+  "market_rates": {
+    "budget": {
+      "5-6": {
+        "typical": 3400000,
+        "lo": 2200000,
+        "hi": 5000000
+      },
+      "7-9": {
+        "typical": 4200000,
+        "lo": 3000000,
+        "hi": 6000000
+      },
+      "10-12": {
+        "typical": 4800000,
+        "lo": 3500000,
+        "hi": 6500000
+      },
+      "14-20": {
+        "typical": 5500000,
+        "lo": 4000000,
+        "hi": 7500000
+      },
+      "20+": {
+        "typical": 6500000,
+        "lo": 5000000,
+        "hi": 9000000
+      }
+    },
+    "mid": {
+      "5-6": {
+        "typical": 5600000,
+        "lo": 4000000,
+        "hi": 7500000
+      },
+      "7-9": {
+        "typical": 5400000,
+        "lo": 4200000,
+        "hi": 7000000
+      },
+      "10-12": {
+        "typical": 5800000,
+        "lo": 4500000,
+        "hi": 8500000
+      },
+      "14-20": {
+        "typical": 6200000,
+        "lo": 5000000,
+        "hi": 9500000
+      },
+      "20+": {
+        "typical": 7500000,
+        "lo": 6000000,
+        "hi": 12000000
+      }
+    },
+    "premium": {
+      "5-6": {
+        "typical": 6500000,
+        "lo": 5000000,
+        "hi": 9000000
+      },
+      "7-9": {
+        "typical": 6800000,
+        "lo": 5500000,
+        "hi": 9500000
+      },
+      "10-12": {
+        "typical": 7200000,
+        "lo": 5800000,
+        "hi": 10500000
+      },
+      "14-20": {
+        "typical": 7000000,
+        "lo": 5500000,
+        "hi": 11000000
+      },
+      "20+": {
+        "typical": 9500000,
+        "lo": 7500000,
+        "hi": 14000000
+      }
+    },
+    "ultra": {
+      "5-6": {
+        "typical": 9000000,
+        "lo": 6000000,
+        "hi": 14000000
+      },
+      "7-9": {
+        "typical": 10500000,
+        "lo": 8000000,
+        "hi": 16000000
+      },
+      "10-12": {
+        "typical": 12000000,
+        "lo": 9000000,
+        "hi": 18000000
+      },
+      "14-20": {
+        "typical": 13500000,
+        "lo": 10000000,
+        "hi": 20000000
+      },
+      "20+": {
+        "typical": 15000000,
+        "lo": 11000000,
+        "hi": 25000000
+      }
+    }
+  },
+  "locations": [
+    "Athal, Islamabad",
+    "B-17, Islamabad",
+    "Bahria Enclave - Sector A, Bahria Enclave",
+    "Bahria Enclave - Sector B1, Bahria Enclave",
+    "Bahria Enclave - Sector C, Bahria Enclave",
+    "Bahria Enclave - Sector C1, Bahria Enclave",
+    "Bahria Enclave - Sector C2, Bahria Enclave",
+    "Bahria Enclave - Sector F1, Bahria Enclave",
+    "Bahria Enclave - Sector H, Bahria Enclave",
+    "Bahria Enclave - Sector I, Bahria Enclave",
+    "Bahria Enclave - Sector M, Bahria Enclave",
+    "Bahria Enclave - Sector N, Bahria Enclave",
+    "Bahria Enclave, Bahria Town",
+    "Bani Gala, Islamabad",
+    "CBR Town Phase 1 - Block D, CBR Town Phase 1",
+    "Canary Residency, Faisal Hills",
+    "Chatha Bakhtawar, Islamabad",
+    "D-12, Islamabad",
+    "D-12/1, D-12",
+    "D-12/3, D-12",
+    "D-12/4, D-12",
+    "D-17, Islamabad",
+    "DHA Defence Phase 1, DHA Defence",
+    "DHA Defence Phase 2, DHA Defence",
+    "DHA Defence Phase 3, DHA Defence",
+    "DHA Defence Phase 5, DHA Defence",
+    "DHA Phase 1 - Sector E, DHA Defence Phase 1",
+    "DHA Phase 1 - Sector F, DHA Defence Phase 1",
+    "DHA Phase 2 - Sector B, DHA Defence Phase 2",
+    "DHA Phase 2 - Sector C, DHA Defence Phase 2",
+    "DHA Phase 2 - Sector D, DHA Defence Phase 2",
+    "DHA Phase 2 - Sector F, DHA Defence Phase 2",
+    "DHA Phase 3 - Block B, DHA Defence Phase 3",
+    "DHA Phase 5 - Sector C, DHA Defence Phase 5",
+    "DHA Phase 5 - Sector D, DHA Defence Phase 5",
+    "DHA Phase 5 - Sector F, DHA Defence Phase 5",
+    "DHA Phase 5 - Sector J, DHA Defence Phase 5",
+    "DHA Valley - Oleander Sector, DHA Valley",
+    "DHA Valley, DHA Defence",
+    "E-11, Islamabad",
+    "E-11/4, E-11",
+    "E-17, Islamabad",
+    "E-17/3, E-17",
+    "E-7, Islamabad",
+    "Eighteen, Kashmir Highway",
+    "Emaar Canyon Views - Alma 1 Block, Emaar Canyon Views",
+    "F-10/1, F-10",
+    "F-10/2, F-10",
+    "F-10/3, F-10",
+    "F-10/4, F-10",
+    "F-11, Islamabad",
+    "F-11/1, F-11",
+    "F-11/3, F-11",
+    "F-11/4, F-11",
+    "F-15/1, F-15",
+    "F-17, Islamabad",
+    "F-6, Islamabad",
+    "F-6/1, F-6",
+    "F-6/3, F-6",
+    "F-6/4, F-6",
+    "F-7, Islamabad",
+    "F-7/1, F-7",
+    "F-7/2, F-7",
+    "F-7/3, F-7",
+    "F-8, Islamabad",
+    "Faisal Margalla City, B-17",
+    "Faisal Town - F-18, Islamabad",
+    "Faisal Town Phase 1 - Block A, Faisal Town Phase 1",
+    "Faisal Town Phase 1 - Block C, Faisal Town Phase 1",
+    "Federation Housing Society - O-9, National Police Foundation O-9",
+    "G-10/1, G-10",
+    "G-10/2, G-10",
+    "G-10/3, G-10",
+    "G-10/4, G-10",
+    "G-11, Islamabad",
+    "G-11/1, G-11",
+    "G-11/3, G-11",
+    "G-13, Islamabad",
+    "G-13/1, G-13",
+    "G-13/3, G-13",
+    "G-13/4, G-13",
+    "G-14, Islamabad",
+    "G-14/3, G-14",
+    "G-14/4, G-14",
+    "G-15, Islamabad",
+    "G-15/2, G-15",
+    "G-16, Islamabad",
+    "G-16/4, G-16",
+    "G-9/4, G-9",
+    "Ghauri Town Phase 7, Ghauri Town",
+    "Gulberg Residencia - Block C, Gulberg Residencia",
+    "Gulberg Residencia - Block E, Gulberg Residencia",
+    "Gulberg Residencia - Block F, Gulberg Residencia",
+    "Gulberg Residencia - Block I, Gulberg Residencia",
+    "Gulberg Residencia - Block L, Gulberg Residencia",
+    "Gulshan-e-Sehat 1, E-18",
+    "H-13, Islamabad",
+    "I-10, Islamabad",
+    "I-10/2, I-10",
+    "I-11, Islamabad",
+    "I-14/1, I-14",
+    "I-14/4, I-14",
+    "I-8, Islamabad",
+    "I-8/3, I-8",
+    "Jinnah Gardens Phase 1, Jinnah Gardens",
+    "Jinnah Gardens, FECHS",
+    "Kuri Road, Islamabad",
+    "MPCHS - Block A, MPCHS - Multi Gardens",
+    "MPCHS - Block B Extension 1, MPCHS - Multi Gardens",
+    "MPCHS - Block B, MPCHS - Multi Gardens",
+    "MPCHS - Block C, MPCHS - Multi Gardens",
+    "MPCHS - Block C1, MPCHS - Multi Gardens",
+    "MPCHS - Block E, MPCHS - Multi Gardens",
+    "MPCHS - Block F, MPCHS - Multi Gardens",
+    "MPCHS - Multi Gardens, B-17",
+    "Margalla View Housing Society, D-17",
+    "Mumtaz City, Islamabad",
+    "National Police Foundation O-9, Islamabad",
+    "Naval Anchorage - Block E, Naval Anchorage",
+    "Oleander Sector - DHA Homes Block A, DHA Valley - Oleander Sector",
+    "Oleander Sector - DHA Homes, DHA Valley - Oleander Sector",
+    "PHAF Officers Residencia, Kuri Road",
+    "PWD Housing Society - Block A, PWD Housing Scheme",
+    "Park View - Block B, Park View City",
+    "Park View - Block H, Park View City",
+    "Park View City - Overseas Block, Park View City",
+    "Rahman Enclave, Lehtrar Road",
+    "Shah Allah Ditta, Islamabad",
+    "Soan Garden - Block B, Soan Garden",
+    "Soan Garden - Block D, Soan Garden",
+    "Soan Garden - Block F, Soan Garden",
+    "Soan Garden, Islamabad",
+    "Sohan Valley, Islamabad",
+    "Tarlai, Islamabad",
+    "Top City 1 - Block A, Top City 1",
+    "Top City 1 - Block B, Top City 1",
+    "Top City 1 - Block D, Top City 1",
+    "Top City 1, Islamabad",
+    "Wapda Town Islamabad, C-19",
+    "Zaraj Housing Scheme, Islamabad"
+  ],
+  "property_types": [
+    "House"
+  ],
+  "train_size": 319,
+  "test_size": 80
+}

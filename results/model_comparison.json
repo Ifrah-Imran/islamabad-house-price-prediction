@@ -1,0 +1,65 @@
+[
+  {
+    "model": "Linear Regression",
+    "MAE": 28730871.14,
+    "MSE": 4175181215934492.0,
+    "RMSE": 64615642.19,
+    "R2": 0.8888,
+    "MAPE_pct": 30.96,
+    "within_20pct": 60.0
+  },
+  {
+    "model": "Decision Tree",
+    "MAE": 48439100.33,
+    "MSE": 1.4045336772883374e+16,
+    "RMSE": 118513023.64,
+    "R2": 0.6258,
+    "MAPE_pct": 37.81,
+    "within_20pct": 38.75
+  },
+  {
+    "model": "Random Forest",
+    "MAE": 36790468.53,
+    "MSE": 8627980317970366.0,
+    "RMSE": 92886922.21,
+    "R2": 0.7701,
+    "MAPE_pct": 30.38,
+    "within_20pct": 47.5
+  },
+  {
+    "model": "Gradient Boosting",
+    "MAE": 29219500.19,
+    "MSE": 4134062298044802.5,
+    "RMSE": 64296674.08,
+    "R2": 0.8899,
+    "MAPE_pct": 29.6,
+    "within_20pct": 52.5
+  },
+  {
+    "model": "XGBoost",
+    "MAE": 33378004.0,
+    "MSE": 7421624567463936.0,
+    "RMSE": 86148851.23,
+    "R2": 0.8023,
+    "MAPE_pct": 29.57,
+    "within_20pct": 52.5
+  },
+  {
+    "model": "CatBoost",
+    "MAE": 37233310.29,
+    "MSE": 1.210779706382608e+16,
+    "RMSE": 110035435.49,
+    "R2": 0.6774,
+    "MAPE_pct": 31.24,
+    "within_20pct": 48.75
+  },
+  {
+    "model": "Calibrated (market-aware)",
+    "MAE": 29599550.78,
+    "MSE": 3726215923302533.5,
+    "RMSE": 61042738.5,
+    "R2": 0.9007,
+    "MAPE_pct": 31.09,
+    "within_20pct": 56.25
+  }
+]

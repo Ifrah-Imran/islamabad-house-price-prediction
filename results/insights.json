@@ -1,0 +1,79 @@
+{
+  "best_model": "Gradient Boosting",
+  "calibrated_metrics": {
+    "model": "Calibrated (market-aware)",
+    "MAE": 29599550.78,
+    "MSE": 3726215923302533.5,
+    "RMSE": 61042738.5,
+    "R2": 0.9007,
+    "MAPE_pct": 31.09,
+    "within_20pct": 56.25
+  },
+  "interpretation": {
+    "rmse_crore": 6.1,
+    "typical_error_pct": 31.09,
+    "predictions_within_20pct": "56.25% of test listings"
+  },
+  "market_reference": {
+    "5_marla_mid_typical": "PKR 2.5 - 3.2 Crore (Faisal Hills / mid societies)",
+    "10_marla_dha_typical": "PKR 6 - 9 Crore",
+    "1_kanal_f7_typical": "PKR 30 - 50+ Crore",
+    "source": "Zameen.com Islamabad trends + scraped dataset"
+  },
+  "hardest_locations": [
+    {
+      "location": "Athal, Islamabad",
+      "mape_pct": 298.7,
+      "test_count": 1
+    },
+    {
+      "location": "Oleander Sector - DHA Homes, DHA Valley - Oleander Sector",
+      "mape_pct": 147.5,
+      "test_count": 1
+    },
+    {
+      "location": "E-17/3, E-17",
+      "mape_pct": 145.6,
+      "test_count": 1
+    },
+    {
+      "location": "DHA Phase 1 - Sector E, DHA Defence Phase 1",
+      "mape_pct": 89.0,
+      "test_count": 1
+    },
+    {
+      "location": "D-12, Islamabad",
+      "mape_pct": 78.8,
+      "test_count": 3
+    },
+    {
+      "location": "DHA Phase 2 - Sector C, DHA Defence Phase 2",
+      "mape_pct": 72.7,
+      "test_count": 1
+    },
+    {
+      "location": "Bahria Enclave - Sector M, Bahria Enclave",
+      "mape_pct": 64.3,
+      "test_count": 1
+    },
+    {
+      "location": "Bani Gala, Islamabad",
+      "mape_pct": 63.9,
+      "test_count": 1
+    }
+  ],
+  "features_used": [
+    "area_marla",
+    "bedrooms",
+    "bathrooms",
+    "location_model",
+    "property_type",
+    "area_band",
+    "total_rooms",
+    "parking_spaces",
+    "servant_quarters",
+    "store_rooms",
+    "kitchens",
+    "drawing_rooms"
+  ]
+}
